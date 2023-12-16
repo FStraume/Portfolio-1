@@ -1,264 +1,370 @@
 html,
 body {
-    scroll-behavior: smooth;
-    margin: 0px;
-    padding: 0px;
+  scroll-behavior: smooth;
+  margin: 0px;
+  padding: 0px;
 }
 
 body {
-        background-color: #EDA864;
-        min-height: 100vh;
-        width: 100%;
+  background-color: #eda864;
+  min-height: 100vh;
+  width: 100%;
 }
 
 a {
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: black;
 }
 
-
 header {
-    background-color: white;
+  background-color: white;
 }
 
 li {
-    list-style: none;
+  list-style: none;
 }
 
 ul {
-        margin: 0px 0px 0px 20px;
-        padding: 0px;
-        position: relative;
-        top: 43%;
+  margin: 0px 0px 0px 20px;
+  padding: 0px;
+  position: relative;
+  top: 43%;
+  line-height: 26px;
 }
 
 p {
-    font-size: 12px;
+  font-size: 12px;
 }
 
 .active {
-    font-size: 20px;
+  font-size: 18px;
+  font-weight: bold;
 }
 
 footer {
-    text-align: center;
+  text-align: center;
 }
 
 /* --------------------- */
 
 .profile {
-    margin: auto;
-    text-align: center;
-    height: 100%;
+  margin: auto;
+  text-align: center;
+  height: 100%;
 }
 
 .profile-pic {
-    width: 300px;
-    height: 300px;
+  width: 300px;
+  height: 300px;
 }
 
-
 .full-win {
-        display: grid;
-        grid-template-columns: 120px 1fr;
-        margin: 0px 0px 20px 0px;
-        height: 100%;
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  margin: 0px 0px 20px 0px;
+  height: 100%;
 }
 
 .win-projects,
 .win-about,
 .win-contact {
-    background-color: #74A0AD;
+  background-color: #74a0ad;
+  box-shadow: 6px 6px 4px 0 rgba(0, 0, 0, 0.1);
 }
 
 .win-about,
 .win-contact {
-        display: flex;
-            flex-direction: column;
-            justify-content: center;
-            padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 30px;
 }
 
 .win-projects {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+  display: grid;
+  grid-template-columns: 1fr;
 }
 
 /* ---------PRODUCT--------- */
 
 .prod-box {
-    margin: 5px;
-    width: 90%;
-    height: 390px;
+  margin: 5px;
+  width: 90%;
+  height: 390px;
 }
 
-
 .prod-img {
-    width: 100%;
-    height: 100px;
-    margin: 0px auto;
-    box-shadow: 6px 6px 4px 0 rgba(0, 0, 0, 0.1);
+  width: 100%;
+  height: 100px;
+  margin: 0px auto;
+  box-shadow: 6px 6px 4px 0 rgba(0, 0, 0, 0.1);
 }
 
 .prod-box h2 {
-    margin: 0px 0px 30px 0px;
+  margin: 0px 0px 30px 0px;
 }
 
 .prod-box p {
-    padding: 0px;
-    margin: 25px 0px 0px 0px;
+  padding: 0px;
+  margin: 25px 0px 0px 0px;
 }
 
 .prod-cta {
-display: grid;
-grid-template-rows: 1fr;
-grid-gap: 3px;
-margin: 25px 0px;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-gap: 6px;
+  margin: 25px 0px;
 }
-
 
 /*---------Buttons----------*/
 .button {
-    display: grid;
-    grid-template-columns: 25px 1fr;
-    align-items: center;
-    background-color: white;
-    border-radius: 10px;
+  display: grid;
+  grid-template-columns: 25px 1fr;
+  align-items: center;
 }
 
 .button img {
-    width: 15px;
-    height: 15px;
+  width: 15px;
+  height: 15px;
 }
 
 .button p {
-    padding: 0px;
-    margin: 5px;
+  padding-left: 8px;
+  margin: 5px;
 }
 
 /*---------prod Carousel----*/
 
 #container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
 
 #carousel,
 #navigation {
-    flex: initial;
-    display: block;
+  flex: initial;
+  display: block;
 }
 
 #carousel {
-    overflow: hidden;
-    width: 200px;
-    height: 400px;
+  overflow: hidden;
+  width: 200px;
+  height: 400px;
 }
 
 .p-wrapper {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    transition: transform 0.4s ease-in-out;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.4s ease-in-out;
 }
 
-#button_a:checked~#carousel .p-wrapper {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
+#button_a:checked ~ #carousel .p-wrapper {
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
 }
 
-#button_b:checked~#carousel .p-wrapper {
-    -webkit-transform: translateY(-100%);
-    transform: translateY(-100%);
+#button_b:checked ~ #carousel .p-wrapper {
+  -webkit-transform: translateY(-100%);
+  transform: translateY(-100%);
 }
 
-#button_c:checked~#carousel .p-wrapper {
-    -webkit-transform: translateY(-200%);
-    transform: translateY(-200%);
+#button_c:checked ~ #carousel .p-wrapper {
+  -webkit-transform: translateY(-200%);
+  transform: translateY(-200%);
 }
 
 [class^="panel_"] {
-    overflow: auto;
-    position: relative;
-    width: inherit;
-    height: inherit;
+  overflow: auto;
+  position: relative;
+  width: inherit;
+  height: inherit;
 }
 
 #navigation {
-    margin-left: 24px;
+  margin-left: 24px;
 }
 
 [class^="label_"] {
-    display: block;
-    cursor: pointer;
-    margin: 8px 0;
-    padding: 0px 5px;
-    height: 32px;
-    line-height: 32px;
-    text-align: center;
-    border-radius: 4px;
-    color: #aaa;
-    background-color: #fff;
-    transition: all 0.3s ease;
+  display: block;
+  cursor: pointer;
+  margin: 8px 0;
+  padding: 0px 5px;
+  height: 32px;
+  line-height: 32px;
+  text-align: center;
+  border-radius: 4px;
+  color: black;
+  background-color: #fff;
+  transition: all 0.3s ease;
 }
 
 [class^="label_"]:hover {
-    color: #444;
-    background-color: #ffeed9;
+  color: #444;
+  background-color: #ffeed9;
 }
 
-#button_a:checked~#navigation .label_a,
-#button_b:checked~#navigation .label_b,
-#button_c:checked~#navigation .label_c {
-    cursor: default;
-    color: #fff;
-    background-color: #222;
+#button_a:checked ~ #navigation .label_a,
+#button_b:checked ~ #navigation .label_b,
+#button_c:checked ~ #navigation .label_c {
+  cursor: default;
+  color: #fff;
+  background-color: #222;
 }
 
 /*--------ABOUT--------*/
 
 .win-about p {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 .about-icons img {
-    height: 45px;
-    width: 45px;
+  height: 45px;
+  width: 45px;
 }
 
 .location-map {
-    width: 100%;
+  width: 100%;
 }
 
 /*-------Contact--------*/
 
 .win-contact img {
-    width: 30px;
+  width: 30px;
 }
 
 .email,
 .contact-form,
 .linkedin,
 .github {
-        display: grid;
-            grid-template-columns: 35px 1fr;
-            align-items: center;
+  display: grid;
+  grid-template-columns: 35px 1fr;
+  align-items: center;
+}
+
+/*-----Modal-----*/
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 50px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  margin: auto;
+  text-align: center;
+}
+
+#modal-image {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.modal-content img {
+  width: 380px;
+  height: auto;
+}
+
+@media (min-width: 600px) {
+  p {
+    font-size: 18px;
+  }
+
+  #carousel {
+    width: 300px;
+  }
+
+  .prod-box h2 {
+    margin: 0px 0px 10px 0px;
+  }
+
+  .prod-img {
+    height: 150px;
+  }
+
+  .button img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .button p {
+    font-size: 17px;
+  }
+
+  [class^="label_"] {
+    padding: 5px 9px;
+  }
+
+  .win-contact img {
+    width: 50px;
+  }
+
+  .win-contact p {
+    font-size: 25px;
+  }
+
+  .email,
+  .contact-form,
+  .linkedin,
+  .github {
+    display: grid;
+    grid-template-columns: 60px 1fr;
+    align-items: center;
+  }
+
+  .modal-content img {
+    width: 580px;
+    height: auto;
+  }
+
+  .location-map {
+    width: 70%;
+  }
+}
+
+@media (min-width: 800px) {
+  #carousel {
+    width: 600px;
+    height: 665px;
+  }
+
+  .prod-img {
+    height: 250px;
+  }
+
+  .modal-content img {
+    width: 780px;
+  }
+
+  .location-map {
+    width: 50%;
+  }
 }
 
 @media (min-width: 1000px) {
-    a {
-        box-shadow: inset 0 0 0 0 #74A0AD;
-        color: black;
-        margin: 0 -.25rem;
-        padding: 0 .25rem;
-        transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
-        text-decoration: none;
-    }
+  a {
+    box-shadow: inset 0 0 0 0 #74a0ad;
+    color: black;
+    margin: 0 -0.25rem;
+    padding: 0 0.25rem;
+    transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    text-decoration: none;
+  }
 
-    a:hover {
-        box-shadow: inset 300px 0 0 0 #74A0AD;
-        color: black;
-    }
+  a:hover {
+    box-shadow: inset 300px 0 0 0 #74a0ad;
+    color: black;
+  }
 }

@@ -47,6 +47,7 @@
                       src="img/powderchase.png"
                       alt="Picture of the website"
                       class="prod-img"
+                      onclick="getModal(this)"
                     />
                     <p>
                       The PowderChase is a Ski blog, built during the Project
@@ -71,6 +72,7 @@
                       src="img/RainyDays.png"
                       alt="Picture of the website"
                       class="prod-img"
+                      onclick="getModal(this)"
                     />
                     <p>
                       RainyDays was built during the cross-course project at
@@ -95,6 +97,7 @@
                       src="img/CSM.png"
                       alt="Picture of the website"
                       class="prod-img"
+                      onclick="getModal(this)"
                     />
                     <p>
                       Community Science Museum is part of the Semester Project
@@ -140,6 +143,7 @@
         <div class="win-about">
           <h2>My name is Fredrik</h2>
           <p>Im studying my first year in Front-End Development at NOROFF</p>
+          <p>My skillset includes</p>
           <div class="about-icons">
             <img src="img/HTML5_logo_and_wordmark.png" alt="HTML 5 logo" />
             <img src="img/CSS3_logo_and_wordmark.png" alt="CSS 3 logo" />
@@ -188,7 +192,13 @@
           </section>
         </div>
       </section>
+      <div id="myModal" class="modal">
+        <div class="modal-content">
+          <div id="modal-image"></div>
+        </div>
+      </div>
     </main>
     <footer>Copyright &copy; Fredrik Straume {FS}</footer>
   </body>
+  <script src="js/script.js"></script>
 </html>
