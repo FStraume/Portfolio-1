@@ -10,6 +10,7 @@ body {
   padding: 0px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   max-width: 1200px;
+  margin: auto;
 }
 
 h1,
@@ -23,6 +24,7 @@ body {
   background-color: #eda864;
   min-height: 100vh;
   width: 100%;
+  margin: auto;
 }
 
 a {
