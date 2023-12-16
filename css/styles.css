@@ -1,8 +1,22 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url(/fonts/Montserrat-Medium.ttf) format("truetype");
+}
+
 html,
 body {
   scroll-behavior: smooth;
   margin: 0px;
   padding: 0px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  max-width: 1200px;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Montserrat", "Gill Sans", "Gill Sans MT", Calibri,
+    "Trebuchet MS", sans-serif;
 }
 
 body {
@@ -18,6 +32,10 @@ a {
 
 header {
   background-color: white;
+  height: 50%;
+  background-image: url(/img/desk-setup-inspiration-1205.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
 
 li {
@@ -48,12 +66,16 @@ footer {
 /* --------------------- */
 
 .profile {
-  margin: auto;
-  text-align: center;
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: -27%;
 }
 
-.profile-pic {
+.profile img {
+  z-index: 2;
   width: 300px;
   height: 300px;
 }
@@ -222,6 +244,12 @@ footer {
 
 .win-about p {
   font-size: 20px;
+  margin: 0px;
+  line-height: 25px;
+}
+
+#skillset {
+  margin: 30px 0px 10px 6px;
 }
 
 .about-icons img {
@@ -370,10 +398,27 @@ footer {
   }
 
   .full-cards h2 {
-    font-size: 20px;
+    font-size: 18px;
   }
 
   .location-map {
     width: 35%;
+  }
+
+  .win-about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+
+  .win-contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: 90px;
+  }
+
+  .location-map {
+    width: 100%;
   }
 }
