@@ -71,6 +71,14 @@ footer {
     background-color: #74A0AD;
 }
 
+.win-about,
+.win-contact {
+        display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 30px;
+}
+
 .win-projects {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
