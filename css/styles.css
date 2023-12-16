@@ -70,7 +70,7 @@ footer {
         display: grid;
         grid-template-columns: 120px 1fr;
         margin: 0px 0px 20px 0px;
-        height: 100%;
+        height: 85%;
 }
 
 .win-projects,
@@ -88,15 +88,30 @@ footer {
 
 .prod-box {
     margin: 5px;
-    width: 150px;
-    outline: 3px solid black;
-    height: 300px;
+    width: 90%;
+    height: 390px;
 }
 
 
 .prod-img {
-    width: 100px;
+    width: 100%;
     height: 100px;
+    margin: 7px auto;
+}
+
+.prod-box h2 {
+    margin: 0px 0px 3px 0px;
+}
+
+.prod-box p {
+    padding: 0px;
+    margin: 0px;
+}
+
+.prod-cta {
+display: grid;
+grid-template-rows: 1fr;
+grid-gap: 3px;
 }
 
 
@@ -199,4 +214,19 @@ footer {
     cursor: default;
     color: #fff;
     background-color: #222;
+}
+
+/*--------ABOUT--------*/
+
+.win-about p {
+    font-size: 20px;
+}
+
+.about-icons img {
+    height: 45px;
+    width: 45px;
+}
+
+.location-map {
+    width: 100%;
 }
