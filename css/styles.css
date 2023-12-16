@@ -230,3 +230,18 @@ grid-gap: 3px;
 .location-map {
     width: 100%;
 }
+
+/*-------Contact--------*/
+
+.win-contact img {
+    width: 30px;
+}
+
+.email,
+.contact-form,
+.linkedin,
+.github {
+        display: grid;
+            grid-template-columns: 35px 1fr;
+            align-items: center;
+}
