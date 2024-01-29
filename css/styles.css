@@ -27,6 +27,11 @@ h3 {
   font-family: "Montserrat", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
+h1 {
+  font-size: 2rem;
+  margin: 0px;
+}
+
 body {
   background-color: var(--background);
   min-height: 100vh;
@@ -45,27 +50,29 @@ header {
 }
 
 .background {
-  height: 50%;
-  background-image: url(/img/desk-setup-inspiration-1205.jpg);
+  height: 60%;
+  background-image: url(/img/prod/front.png);
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
 
 .profile {
   position: relative;
-  height: 50%;
+  height: 0%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  top: -140px;
+  top: -236px;
 }
 
-.profile img {
-  z-index: 2;
-  width: 300px;
-  height: 300px;
-  border-radius: 50%;
+.profile p {
+  font-size: 1.5rem;
+  margin: 0px;
+}
+
+.welcome {
+  text-align: center;
 }
 
 li {
@@ -181,7 +188,7 @@ footer {
 #carousel {
   overflow: hidden;
   width: 200px;
-  height: 400px;
+  height: 378px;
 }
 
 .carousel-inner {
@@ -271,6 +278,10 @@ footer {
   width: 30px;
 }
 
+.header-nav li {
+  display: inline;
+}
+
 .email,
 .contact-form,
 .linkedin,
@@ -320,7 +331,7 @@ footer {
 
   #carousel {
     width: 400px;
-    height: 600px;
+    height: 578px;
   }
 
   .prod-box {
@@ -378,7 +389,7 @@ footer {
 @media (min-width: 800px) {
   #carousel {
     width: 600px;
-    height: 600px;
+    height: 578px;
   }
 
   .prod-img {
