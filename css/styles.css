@@ -118,32 +118,15 @@ footer {
 /* ---------PRODUCT--------- */
 
 .prod-box {
-  margin: 5px;
-  width: 90%;
-  height: 390px;
+  border: 1px solid black;
+  padding: 10px;
+  width: fit-content;
+  height: 378px;
 }
 
-.prod-img {
+.prod-box img {
   width: 100%;
-  height: 100px;
-  margin: 0px auto;
-  box-shadow: 6px 6px 4px 0 rgba(0, 0, 0, 0.1);
-}
-
-.prod-box h2 {
-  margin: 0px 0px 30px 0px;
-}
-
-.prod-box p {
-  padding: 0px;
-  margin: 25px 0px 0px 0px;
-}
-
-.prod-cta {
-  display: grid;
-  grid-template-rows: 1fr;
-  grid-gap: 6px;
-  margin: 25px 0px;
+  height: auto;
 }
 
 /*---------Buttons----------*/
@@ -323,7 +306,12 @@ footer {
   }
 
   #carousel {
-    width: 300px;
+    width: 400px;
+    height: 600px;
+  }
+
+  .prod-box {
+    height: 578px;
   }
 
   .prod-box h2 {
@@ -377,8 +365,8 @@ footer {
 @media (min-width: 800px) {
   #carousel {
     width: 600px;
-    height: 665px;
-  }
+    height: 600px;
+}
 
   .prod-img {
     height: 250px;
@@ -403,6 +391,8 @@ footer {
     grid-template-columns: 1fr 1fr 1fr;
     justify-content: center;
     align-items: center;
+    padding: 15px;
+    gap: 30px;
   }
 
   .full-cards h2 {
