@@ -3,6 +3,13 @@
   src: url(/fonts/Montserrat-Medium.ttf) format("truetype");
 }
 
+:root {
+  --background: #364654;
+  --window: #0b385e;
+  --object: #364654;
+  --text: #fff;
+}
+
 html,
 body {
   scroll-behavior: smooth;
@@ -11,6 +18,7 @@ body {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   max-width: 1980px;
   margin: auto;
+  color: var(--text);
 }
 
 h1,
@@ -20,7 +28,7 @@ h3 {
 }
 
 body {
-  background-color: #eda864;
+  background-color: var(--background);
   min-height: 100vh;
   width: 100%;
   margin: auto;
@@ -28,11 +36,11 @@ body {
 
 a {
   text-decoration: none;
-  color: black;
+  color: var(--text);
 }
 
 header {
-  background-color: #eda864;
+  background-color: var(--background);
   height: 100%;
 }
 
@@ -97,7 +105,7 @@ footer {
 .win-projects,
 .win-about,
 .win-contact {
-  background-color: #74a0ad;
+  background-color: var(--window);
   box-shadow: 6px 6px 4px 0 rgba(0, 0, 0, 0.1);
 }
 
@@ -117,30 +125,28 @@ footer {
 /* ---------PRODUCT--------- */
 
 .prod-box {
-  border: 1px solid black;
-  padding: 10px;
+  border-radius: 7px;
   width: fit-content;
   height: 378px;
+  background-color: var(--object);
 }
 
 .prod-box img {
   width: 100%;
   height: auto;
+  border-radius: 7px 7px 0px 0px;
 }
 
 /*---------Buttons----------*/
-.button {
-  display: grid;
-  grid-template-columns: 25px 1fr;
-  align-items: center;
-  border: 1px solid black;
-  border-radius: 5px;
-  justify-content: center;
-  align-items: center;
-}
 
 .button-format {
-  text-align: center;
+  display: grid;
+  justify-content: center;
+}
+
+.button {
+  display: flex;
+  align-items: center;
 }
 
 .button img {
