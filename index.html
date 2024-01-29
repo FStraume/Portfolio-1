@@ -11,7 +11,7 @@
     <header>
       <section class="background" id="header"></section>
       <section class="profile">
-        <img src="img/profile-pic.png" />
+        <img src="img/self-img.jpg" />
         <h1>Fredrik Straume</h1>
         <p>Front-end Development student</p>
       </section>
@@ -67,7 +67,7 @@
               />
               <p>
                 RainyDays was built during the cross-course project at Noroff,
-                built with WordPress API
+                built with headless WordPress API
               </p>
               <div class="prod-cta">
                 <a
@@ -116,7 +116,8 @@
               </div>
             </div>
           </section>
-          <div id="container">
+          <!--Carousel inspired by https://codepen.io/yeoli-thm/pen/ajVZjv-->
+          <div id="carousel-div">
             <input
               hidden
               type="radio"
@@ -129,8 +130,8 @@
             <input hidden type="radio" name="carousel-control" id="button_d" />
 
             <div id="carousel">
-              <div class="p-wrapper">
-                <section class="panel_a">
+              <div class="carousel-inner">
+                <section class="prod-a">
                   <div class="prod-box">
                     <h2>The PowderChase</h2>
                     <img
@@ -161,7 +162,7 @@
                     </div>
                   </div>
                 </section>
-                <section class="panel_b">
+                <section class="prod-b">
                   <div class="prod-box">
                     <h2>RainyDays</h2>
                     <img
@@ -172,7 +173,8 @@
                     />
                     <p>
                       RainyDays was built during the cross-course project at
-                      Noroff, built with WordPress API
+                      Noroff, built with WordPress API and includes products,
+                      shoppingcart and contact form
                     </p>
                     <div class="prod-cta">
                       <a
@@ -192,7 +194,7 @@
                     </div>
                   </div>
                 </section>
-                <section class="panel_c">
+                <section class="prod-c">
                   <div class="prod-box">
                     <h2>Community Science Museum</h2>
                     <img
@@ -225,7 +227,7 @@
                 </section>
               </div>
             </div>
-            <div id="navigation">
+            <div id="carousel-nav">
               <label for="button_a" class="label_a">
                 <span>1</span>
               </label>

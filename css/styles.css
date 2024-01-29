@@ -9,7 +9,7 @@ body {
   margin: 0px;
   padding: 0px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  max-width: 1200px;
+  max-width: 1980px;
   margin: auto;
 }
 
@@ -58,6 +58,7 @@ header {
   z-index: 2;
   width: 300px;
   height: 300px;
+  border-radius: 50%;
 }
 
 li {
@@ -168,7 +169,7 @@ footer {
   display: none;
 }
 
-#container {
+#carousel-div {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -176,7 +177,7 @@ footer {
 }
 
 #carousel,
-#navigation {
+#carousel-nav {
   flex: initial;
   display: block;
 }
@@ -187,24 +188,24 @@ footer {
   height: 400px;
 }
 
-.p-wrapper {
+.carousel-inner {
   position: relative;
   width: 100%;
   height: 100%;
   transition: transform 0.4s ease-in-out;
 }
 
-#button_a:checked ~ #carousel .p-wrapper {
+#button_a:checked ~ #carousel .carousel-inner {
   -webkit-transform: translateY(0);
   transform: translateY(0);
 }
 
-#button_b:checked ~ #carousel .p-wrapper {
+#button_b:checked ~ #carousel .carousel-inner {
   -webkit-transform: translateY(-100%);
   transform: translateY(-100%);
 }
 
-#button_c:checked ~ #carousel .p-wrapper {
+#button_c:checked ~ #carousel .carousel-inner {
   -webkit-transform: translateY(-200%);
   transform: translateY(-200%);
 }
@@ -216,7 +217,7 @@ footer {
   height: inherit;
 }
 
-#navigation {
+#carousel-nav {
   margin-left: 24px;
 }
 
@@ -239,9 +240,9 @@ footer {
   background-color: #ffeed9;
 }
 
-#button_a:checked ~ #navigation .label_a,
-#button_b:checked ~ #navigation .label_b,
-#button_c:checked ~ #navigation .label_c {
+#button_a:checked ~ #carousel-nav .label_a,
+#button_b:checked ~ #carousel-nav .label_b,
+#button_c:checked ~ #carousel-nav .label_c {
   cursor: default;
   color: #fff;
   background-color: #222;
@@ -393,7 +394,7 @@ footer {
 }
 
 @media (min-width: 1000px) {
-  #container {
+  #carousel-div {
     display: none;
   }
 
@@ -426,6 +427,6 @@ footer {
   }
 
   .location-map {
-    width: 100%;
+    width: 80%;
   }
 }
